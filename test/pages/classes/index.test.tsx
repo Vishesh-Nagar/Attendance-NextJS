@@ -1,9 +1,8 @@
 import { waitFor, render, screen } from "../../test-utils";
 import userEvent from "@testing-library/user-event";
 import Classes from "../../../pages/classes";
-import fetchMock from 'jest-fetch-mock';
+import fetchMock from "jest-fetch-mock";
 fetchMock.enableMocks();
-
 
 describe("Classes page", () => {
     test("renders No classes found! as a text when there are no classes", () => {
@@ -85,7 +84,7 @@ describe("Classes page", () => {
             fetchMock.resetMocks();
         });
         afterEach(() => {
-            fetchMock.mockClear();
+            fetchMock.resetMocks();
         });
 
         test("renders attend button", async () => {
@@ -223,7 +222,7 @@ describe("Classes page", () => {
             fetchMock.resetMocks();
         });
         afterEach(() => {
-            fetchMock.mockClear();
+            fetchMock.resetMocks();
         });
 
         test("renders edit button", async () => {
@@ -308,7 +307,7 @@ describe("Classes page", () => {
             fetchMock.resetMocks();
         });
         afterEach(() => {
-            fetchMock.mockClear();
+            fetchMock.resetMocks();
         });
 
         test("renders edit button", async () => {
