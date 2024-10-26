@@ -1,19 +1,19 @@
 export enum AttendaceState {
-  PENDING = 'Pending approve',
-  APPROVED =  'Approved',
-  REJECTED = 'Rejected'
+    PENDING = "Pending approve",
+    APPROVED = "Approved",
+    REJECTED = "Rejected",
 }
 
 class Student {
-  id: string;
-  fullName: string;
-  state: string;
+    id: string;
+    fullName: string;
+    state: string;
 
-  constructor(id: string, fullName: string, state: string) {
-    this.id = id;
-    this.fullName = fullName;
-    this.state = state;
-  }
+    constructor(id: string, fullName: string, state: string) {
+        this.id = id;
+        this.fullName = fullName;
+        this.state = state;
+    }
 }
 
 export default Student;
